@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/aboutmemypicture"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/mypic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/about_me_title" />
+
+    <TextView
+        android:id="@+id/about_me_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="16dp"
+        android:text="About Me"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aboutmetext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hello, my name is Steven. To find out more about me press the links."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutmemypicture" />
+
+    <Button
+        android:id="@+id/family_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/button_background"
+        android:text="Family"
+        app:layout_constraintEnd_toEndOf="@+id/about_me_title"
+        app:layout_constraintStart_toStartOf="@+id/about_me_title"
+        app:layout_constraintTop_toBottomOf="@+id/about_me_title" />
+
+    <Button
+        android:id="@+id/work_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Work"
+        app:layout_constraintEnd_toEndOf="@+id/family_button"
+        app:layout_constraintStart_toStartOf="@+id/family_button"
+        app:layout_constraintTop_toBottomOf="@+id/family_button" />
+
+    <Button
+        android:id="@+id/hobbies_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Hobbies"
+        app:layout_constraintEnd_toEndOf="@+id/family_button"
+        app:layout_constraintStart_toStartOf="@+id/family_button"
+        app:layout_constraintTop_toBottomOf="@+id/work_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

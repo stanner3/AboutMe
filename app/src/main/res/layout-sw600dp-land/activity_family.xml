@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <ImageView
+        android:id="@+id/family_pic"
+        android:layout_width="455dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/pets_pic"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_me_button"
+        app:srcCompat="@drawable/familypic" />
+
+    <TextView
+        android:id="@+id/family_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Here's my family. My wife, son, daugther and two dogs."
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/family_pic" />
+
+    <Button
+        android:id="@+id/about_me_button"
+        android:layout_width="315dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="About Me"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toStartOf="@+id/work_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/work_button"
+        android:layout_width="315dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:text="Work"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/about_me_button"
+        app:layout_constraintEnd_toStartOf="@+id/hobbies_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/about_me_button"
+        app:layout_constraintTop_toTopOf="@+id/about_me_button" />
+
+    <Button
+        android:id="@+id/hobbies_button"
+        android:layout_width="315dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hobbies"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/about_me_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/work_button"
+        app:layout_constraintTop_toTopOf="@+id/about_me_button" />
+
+    <ImageView
+        android:id="@+id/pets_pic"
+        android:layout_width="455dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:minHeight="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/family_pic"
+        app:layout_constraintTop_toTopOf="@+id/family_pic"
+        app:srcCompat="@drawable/petssmallpic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
