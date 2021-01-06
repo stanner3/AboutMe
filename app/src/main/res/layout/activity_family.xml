@@ -36,11 +36,12 @@
 
     <Button
         android:id="@+id/about_me_button"
-        android:layout_width="107dp"
+        android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="AboutMe"
+        android:text="About Me"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/work_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
